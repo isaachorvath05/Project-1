@@ -1,0 +1,17 @@
+def ask_for_raise
+  puts "Boss: Hello, what can I do for you?"
+  puts "You: Hi Boss, I wanted to discuss the possibility of a raise."
+  puts "Boss: I'm sorry, but I can't give you a raise now."
+  
+  while true
+    response = gets.chomp.downcase
+    if response == "why can't i have a raise?"
+      puts "Boss: No, I said leave me alone."
+      break
+    else
+      puts "Boss: now get back to work please!"
+    end
+  end
+end
+
+ask_for_raise
