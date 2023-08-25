@@ -6,12 +6,12 @@ while true
   if reply == reply.downcase
     puts 'HUH! SPEAK UP, SONNY'
   elsif reply == reply.upcase
-    puts 'NO, NOT SINCE 1938!'
+    puts "NO, NOT SINCE #{rand(1930..1950)}!"  # Generate a random year between 1930 and 1950
   end
-  if reply == 'bye bye bye' && bye_count < 1
+  if reply == 'BYE BYE BYE' && bye_count < 1
     puts 'Goodbye, dear!'
     bye_count += 1
-  elsif reply == 'bye'
+  elsif reply == 'BYE'
     break
   end
 end
