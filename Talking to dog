@@ -1,0 +1,18 @@
+def talk_to_dog
+  puts "You: Hey, buddy! How's it going?"
+  puts "Dog: Woof woof!"
+  
+  while true
+    response = gets.chomp.downcase
+    if response.include?("quiet") || response.include?("stop")
+      puts "Dog: Woof!"
+    elsif response.include?("bye")
+      puts "Dog: *waves tail* Bye!"
+      break
+    else
+      puts "Dog: Woof woof!"
+    end
+  end
+end
+
+talk_to_dog
